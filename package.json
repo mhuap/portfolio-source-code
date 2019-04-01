@@ -1,6 +1,6 @@
 {
   "name": "wes-h-portfolio",
-  "private": false,
+  "private": true,
   "description": "Wes Huapaya's personal portfolio website.",
   "version": "0.1.0",
   "author": "Wes Huapaya <huapmar97@gmail.com>",
