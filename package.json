@@ -1,7 +1,7 @@
 {
   "name": "wes-h-portfolio",
   "private": true,
-  "description": "Wes Huapaya's personal portfolio website.",
+  "description": "Build for Wes Huapaya's personal website.",
   "version": "0.1.0",
   "author": "Wes Huapaya <huapmar97@gmail.com>",
   "dependencies": {
@@ -32,7 +32,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "deploy": "gatsby build && node ./scripts/deploy-to-github"
+    "deploy": "npm run build && node ./scripts/deploy-to-github"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
