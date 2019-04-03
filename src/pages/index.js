@@ -1,21 +1,23 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+// import { Link } from "gatsby"
+// {this.props.children.key === '/' ? <Software /> : this.props.children}
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import SEO from "../components/seo";
+import '../components/index.css';
+import Home from '../components/Home';
+import Projects from '../components/Projects';
+import Software from '../pages/software';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+function IndexPage(props) {
+  return (
+    <>
+      <SEO title="Home" keywords={[`portfolio`, `website`, `huapaya`, `homepage`]} />
+      <Home />
+      <Projects initVal={!props.children.key.includes('design')}>
+        {props.children.key === '/' ? <Software /> : props.children}
+      </Projects>
+    </>
+  );
+}
 
 export default IndexPage

@@ -1,0 +1,61 @@
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+@keyframes fadeIn {
+  0% {opacity: 0},
+  100% {opacity: 1}
+}
+
+#home-container {
+  margin: auto;
+  align-items: center;
+}
+
+#home h1 {
+  margin: 0;
+  margin-top: -25px;
+}
+
+#home h1 span{
+  color: var(--light-blue)
+}
+
+#home img {
+  margin: 1.5rem;
+  width: 200px;
+  height: 200px;
+}
+
+#home .center p {
+  margin: 0;
+  text-align: left;
+}
+
+#home p#hi {
+  font-size: 1.2rem;
+}
+
+#home p#text {
+  max-width: 250px;
+  margin-top: -15px;
+}
+
+#home #scroll {
+  position: absolute;
+  color: var(--light-blue);
+  bottom: 0;
+}
+
+@media (max-width: 550px){
+  .home {
+    display: flex;
+    padding-top: 0;
+  }
+}
