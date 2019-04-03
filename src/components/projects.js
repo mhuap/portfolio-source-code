@@ -7,14 +7,13 @@ class Projects extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      change: this.props.initVal,
+      change: this.props.initVal
     }
     this.toggleSoftwareActive = this.toggleSoftwareActive.bind(this);
   }
 
   toggleSoftwareActive() {
     const currState = this.state.change;
-    console.log(currState);
     this.setState({ change: !currState });
   }
 
