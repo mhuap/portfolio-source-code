@@ -1,7 +1,8 @@
 import React from 'react';
 import Function from '../components/function.js';
+import Template from '../components/template';
 
-function Software() {
+function SoftwareContent() {
   return (
     <>
       <Function
@@ -96,6 +97,14 @@ function Software() {
       </Function>
 
     </>
+  );
+}
+
+function Software(){
+  return (
+    <Template software={true}>
+      <SoftwareContent />
+    </Template>
   );
 }
 
