@@ -1,0 +1,22 @@
+#about {
+  display: flex;
+  width: 60vw;
+}
+
+#about img {
+  /* width: 300px; */
+  height: 300px;
+  margin-right: 5rem;
+}
+
+#about h1 {
+  margin: 0;
+}
+
+#about #info p {
+  margin: 0;
+}
+
+#description {
+  text-align: left;
+}

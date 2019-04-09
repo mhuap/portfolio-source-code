@@ -110,23 +110,23 @@ hr {
   display: inline-block;
 }
 
-.techs ul {
+ul.techs {
   padding: 0;
   margin: 0;
   display: inline-block;
 }
 
-.techs ul::before {
+ul.techs::before {
   content: '[';
   margin-right: 0.5rem;
 }
 
-.techs ul::after {
+ul.techs::after {
   content: ']';
   margin-left: 0.5rem;
 }
 
-.techs ul::before, .techs ul::after {
+ul.techs::before, ul.techs::after {
   font-weight: bold;
 }
 

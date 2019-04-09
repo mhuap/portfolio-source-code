@@ -13,14 +13,12 @@ function Software() {
         <p>
           I worked on this as an exercise in front-end development.
         </p>
-        <p className='techs'>
-          <ul>
-            <li>Javascript</li>
-            <li>HTML/CSS</li>
-            <li>ReactJS</li>
-            <li>Gatsby</li>
-          </ul>
-        </p>
+        <ul className='techs'>
+          <li>Javascript</li>
+          <li>HTML/CSS</li>
+          <li>ReactJS</li>
+          <li>Gatsby</li>
+        </ul>
       </Function>
       <Function
         name='SmartFleet'
@@ -34,16 +32,14 @@ function Software() {
         <p>
           I mainly focused on the back-end and built the API connecting our app to the SmartCar and Google APIs.
         </p>
-        <p className='techs'>
-          <ul>
-            <li>Python</li>
-            <li>Flask</li>
-            <li>SmartCar API</li>
-            <li>Google APIs: Geocoding, Maps Javascript, Distance Matrix </li>
-            <li>Javascript</li>
-            <li>HTML/CSS</li>
-          </ul>
-        </p>
+        <ul className='techs'>
+          <li>Python</li>
+          <li>Flask</li>
+          <li>SmartCar API</li>
+          <li>Google APIs: Geocoding, Maps Javascript, Distance Matrix </li>
+          <li>Javascript</li>
+          <li>HTML/CSS</li>
+        </ul>
       </Function>
       <Function
         name='Childhood Illness Diagnosis App'
@@ -55,15 +51,13 @@ function Software() {
         <p>
           I worked on this as an exercise in Android development.
         </p>
-        <p className='techs'>
-          <ul>
-            <li>Java</li>
-            <li>SQL</li>
-            <li>Room Persistance Library</li>
-            <li>Android Platforms API</li>
-            <li>Android Studio</li>
-          </ul>
-        </p>
+        <ul className='techs'>
+          <li>Java</li>
+          <li>SQL</li>
+          <li>Room Persistance Library</li>
+          <li>Android Platforms API</li>
+          <li>Android Studio</li>
+        </ul>
       </Function>
 
       <Function
@@ -72,12 +66,10 @@ function Software() {
         <p>
           Built a 3D game in Unity that involved moving a cube around a maze and shooting projectiles to spring the cube over walls and defeat enemies.
         </p>
-        <p className='techs'>
-          <ul>
-            <li>C#</li>
-            <li>Unity3D</li>
-          </ul>
-        </p>
+        <ul className='techs'>
+          <li>C#</li>
+          <li>Unity3D</li>
+        </ul>
       </Function>
 
       <Function
@@ -86,15 +78,12 @@ function Software() {
         <p>
           Created a musical instrument and looping machine with an FPGA. The user controls notes with simultaneous use and coordination of switches and PS2 mouse. I also implemented a looping feature that allowed the user to load in notes and play them back.
         </p>
-        <p className='techs'>
-          <ul>
-            <li>Verilog</li>
-            <li>Altera DE1-SoC</li>
-            <li>Quartus II</li>
-          </ul>
-        </p>
+        <ul className='techs'>
+          <li>Verilog</li>
+          <li>Altera DE1-SoC</li>
+          <li>Quartus II</li>
+        </ul>
       </Function>
-
     </>
   );
 }
