@@ -14,8 +14,8 @@ function About() {
             <p>Pronouns: He/him or they/them</p>
           </div>
           <p>
-            I'm passionate about using technology to tackle issues of social inequity;
-            such as those regarding LGBTQ+ folks, people of color, mental health, disabilities, and all their intersections.
+            I'm passionate about using technology to tackle issues of social inequity
+            that impact marginalized communities, such as LGBTQ+ folks and BIPOC.
           </p>
           <p><a href="/">{'>'} Back to main</a></p>
         </div>
