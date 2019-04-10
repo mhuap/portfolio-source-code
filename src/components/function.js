@@ -4,10 +4,8 @@ function Function ({ name, subtitle, children }) {
   return (
     <div className='function'>
         <h3>{name} {'{'}</h3>
-        <div>
-          {subtitle ? <Subtitle text={subtitle}/> : ""}
-          {children}
-        </div>
+        {subtitle ? <Subtitle text={subtitle}/> : ""}
+        {children}
         <h3>{'}'}</h3>
     </div>
   );
@@ -15,9 +13,15 @@ function Function ({ name, subtitle, children }) {
 
 function Subtitle ({text}) {
   return (
-    <p className='subtitle'>{'//'} {text}
-      <div className='highlight'></div>
-    </p>
+    <div className='subtitle'>
+      <div className='mobileSub'>
+        <p className='slashes'> {'//'}</p>
+        <p className='subText'>
+           {text}
+        </p>
+        <div className='highlight'></div>
+      </div>
+    </div>
   );
 };
 
