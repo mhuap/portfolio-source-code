@@ -6,6 +6,7 @@ import './Home.css'
 function Home() {
   return (
     <>
+    <a id='about-link' href='/about'>Learn more about me!</a>
     <div id='home' className='full-for-center'>
       <div className='center'>
           <img src={logo} alt='cute ghost logo'/>
@@ -14,7 +15,6 @@ function Home() {
           </p>
           <h1>wes<span id='accent'>.</span>huapaya</h1>
       </div>
-      <a id='about-link' href='/about'>Learn more about me!</a>
     </div>
     </>
   );

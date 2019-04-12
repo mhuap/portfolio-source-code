@@ -6,6 +6,8 @@
     --almost-white: #E9F1FF;
 }
 
+@import url('https://fonts.googleapis.com/css?family=PT+Mono|PT+Sans:400,700');
+
 html {
   font-size: 12px;
 }
@@ -28,7 +30,7 @@ body {
 }
 
 p, .function {
-  font-family: 'PT Mono', serif;
+  font-family: 'PT Mono', monospace;
 }
 
 body a {
@@ -59,17 +61,17 @@ h2 a:hover {
 }
 
 hr {
-  border: var(--light-blue) solid 1px;
-  margin: 0 -2rem;
+  border: var(--med) solid 1px;
+  margin: 0 -1rem;
 }
 
 /* Element media queries */
 
-/* @media (min-width: 980px) {
+@media (min-width: 768px) {
   hr {
     margin: 0 -2rem;
   }
-} */
+}
 
 /* List styles */
 
@@ -82,25 +84,38 @@ li::before {
 }
 
 /* classes and ids */
-
 #about-link {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
-  margin: 2.2rem;
+  z-index: 1;
+  margin: 1rem;
   padding: 0;
   width: 100px;
   text-align: right;
   color: var(--lighter);
-  font-family: 'PT Mono', serif;
+  font-family: 'PT Mono', monospace;
 }
+
+@media (min-width: 768px) {
+  #about-link {
+    margin: 2.2rem;
+  }
+}
+
+@media (min-width: 1024px){
+  #about-link {
+    position: fixed;
+  }
+}
+
 
 .function {
   margin-bottom: 4rem;
 }
 
 .function h3 {
-  font-family: 'PT Mono', serif;
+  font-family: 'PT Mono', monospace;
   font-weight: 600;
   margin-top: 0;
   max-width: 80vw;
@@ -108,20 +123,16 @@ li::before {
 }
 
 .function h3:first-child {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .function h3:last-child {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
   .function h3:first-child {
     margin-bottom: 1rem;
-  }
-
-  .function h3:last-child {
-    margin-top: 1rem;
   }
 
   .function h3{
@@ -185,9 +196,13 @@ li::before {
 
 ul.techs {
   margin: 0;
+  margin-bottom: 1rem;
+  margin-left: 3vw;
   font-size: small;
   display: inline-block;
-  margin-bottom: 1rem;
+  border-top: solid 1px var(--light-blue);
+  padding-left: 0;
+  padding-top: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -196,23 +211,25 @@ ul.techs {
   }
 }
 
-ul.techs::before {
-  content: '[';
+/* ul.techs::before {
+  content: '<';
   margin-right: 0.5rem;
+  color: var(--med);
 }
 
 ul.techs::after {
-  content: ']';
+  content: '>';
   margin-left: 0.5rem;
+  color: var(--med);
 }
 
 ul.techs::before, ul.techs::after {
   font-weight: bold;
-}
+} */
 
 .techs li {
   display: inline-block;
-  color: var(--lighter);
+
 }
 
 .techs li::before {
@@ -222,7 +239,6 @@ ul.techs::before, ul.techs::after {
 .techs li::after {
   content: ',';
   margin: 0 0.5rem;
-  color: var(--dark);
   font-weight: bolder;
 }
 

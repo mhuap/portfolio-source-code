@@ -10,7 +10,7 @@ import Projects from '../components/Projects';
 function Template(props) {
   return (
     <>
-      <SEO title="Home" keywords={[`portfolio`, `website`, `huapaya`, `homepage`]} />
+      <SEO title="" keywords={[`portfolio`, `website`, `huapaya`, `homepage`]} />
       <Home />
       <Projects initVal={props.software}>
         {props.children}
