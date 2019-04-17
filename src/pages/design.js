@@ -46,21 +46,34 @@ function Design() {
   return (
     <Template software={false}>
       <div id='design'>
-        <div className='gallery-col'>
-          <img src={steviePoster} alt='Poster for LGBTOUT'/>
-          <img src={cssu} alt='Header for CSSU poster'/>
-        </div>
-        <div id='mid-col' className='gallery-col'>
-          <img src={self} alt='Self-portrait'/>
-          <img src={albumCover} alt='original album cover'/>
-        </div>
-        <div className='gallery-col'>
-          <img src={lwp} alt='Lead With Pride'/>
-          <img src={invisabilities} alt='Poster for Invisabilities'/>
+        <div>
+          <GridImage src={steviePoster} alt='Poster for LGBTOUT'/>
+          <GridImage src={self} alt='Self-portrait'/>
+          <GridImage src={albumCover} alt='original album cover'/>
+          <GridImage src={cssu} alt='Header for CSSU poster'/>
+          <GridImage src={lwp} alt='Lead With Pride'/>
+          <GridImage src={invisabilities} alt='Poster for Invisabilities'/>
         </div>
       </div>
     </Template>
   );
 }
 
+function GridImage({src, alt}) {
+  return (
+    <div className='img-container'>
+      <div className='crop'>
+        <img src={src} alt={alt}/>
+      </div>
+    </div>
+  );
+}
+
 export default Design;
+
+
+// <div className='img-container'>
+//   <div className='crop'>
+//     <img src={src} alt={alt}/>
+//   </div>
+// </div>
