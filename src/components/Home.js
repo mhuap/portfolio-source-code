@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../images/logo.png'
 import './Home.css'
+import { Link, animateScroll as scroll } from "react-scroll";
 // import Projects from './projects.js';
 
 function Home() {
@@ -13,8 +14,14 @@ function Home() {
           <p id='hi'>
             Hi, I'm
           </p>
-          <h1>wes<span id='accent'>.</span>huapaya</h1>
+          <h1>wes huapaya</h1>
       </div>
+    </div>
+    <div id='scroll'>
+      <Link to="projects" smooth={true}>
+        <span></span>
+        <small id="scroll-text">scroll down</small>
+      </Link>
     </div>
     </>
   );
