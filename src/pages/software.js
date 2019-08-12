@@ -1,7 +1,6 @@
 import React from 'react';
-import Function from '../components/function';
 import Template from '../components/template';
-import SoftwareContent from '../components/software'
+import SoftwareContent from '../components/softwareContent'
 
 function Software(){
   return (

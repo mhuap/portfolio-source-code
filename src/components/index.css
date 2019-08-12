@@ -65,6 +65,31 @@ hr {
   margin: 0 -1rem;
 }
 
+a svg:not(:root).svg-inline--fa {
+  overflow: hidden;
+  width: 2rem;
+}
+
+footer {
+  margin: 1rem 0;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+  max-height: 2rem;
+}
+
+footer a {
+  margin: 0 16px;
+  max-height: 2rem;
+  color: var(--lighter);
+  overflow: hidden;
+  width: 100px;
+}
+
+footer a:hover {
+  color: var(--dark);
+}
+
 /* Element media queries */
 
 @media (min-width: 768px) {
@@ -84,6 +109,10 @@ li::before {
 }
 
 /* classes and ids */
+.container {
+  position: relative;
+}
+
 #about-link {
   position: absolute;
   top: 0;
@@ -93,7 +122,6 @@ li::before {
   padding: 0;
   width: 100px;
   text-align: right;
-  color: var(--lighter);
   font-family: 'PT Mono', monospace;
 }
 
@@ -256,4 +284,8 @@ ul.techs::before, ul.techs::after {
 .center {
   margin:auto;
   text-align: center;
+}
+
+.social path {
+  fill: var(--med);
 }

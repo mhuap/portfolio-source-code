@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 #about img {
@@ -49,11 +49,26 @@
   position: relative;
 }
 
+@media (min-width: 375px) {
+  #about {
+    max-width: 300px;
+  }
+}
+
 @media (min-width: 1024px) {
   #about {
-    flex-direction: row;
     margin: 0 auto;
     max-width: 800px;
+  }
+
+  #about-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #about footer {
+    text-align: left;
+    margin-left: 50px;
   }
 
   #about img {

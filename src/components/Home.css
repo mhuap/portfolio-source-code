@@ -3,6 +3,10 @@
   100% {opacity: 1}
 }
 
+#home {
+  position: relative;
+}
+
 #home-container {
   margin: auto;
   align-items: center;
@@ -53,9 +57,10 @@
 #scroll {
   position: absolute;
   font-family: 'PT Mono', monospace;
-  bottom: 48px;
-  display: block;
-  width: 100%;
+  bottom: 3rem;
+  width: 100px;
+  left: 50%;
+  margin-left: -50px;
   text-align: center;
   color: var(--lighter);
 }
@@ -66,13 +71,13 @@
 
 #scroll span {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 2px solid var(--lighter);
-  border-bottom: 2px solid var(--lighter);
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: -0.75rem;
+  border-left: 2px solid var(--med);
+  border-bottom: 2px solid var(--med);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: arrow-fade 1.5s infinite;
@@ -81,7 +86,7 @@
 }
 
 #scroll small#scroll-text {
-  margin-top: 80px;
+  margin-top: 5rem;
   display: inline-block;
 }
 

@@ -1,12 +1,12 @@
 import React from "react";
 import '../components/index.css';
 import Template from '../components/template';
-import Software from '../components/software';
+import SoftwareContent from '../components/softwareContent';
 
 function IndexPage(props) {
   return (
     <Template software={true}>
-      <Software />
+      <SoftwareContent />
     </Template>
   );
 }

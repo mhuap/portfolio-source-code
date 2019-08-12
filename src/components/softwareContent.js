@@ -1,7 +1,7 @@
 import React from 'react';
 import Function from '../components/function.js';
 
-function Software() {
+function SoftwareContent() {
   return (
     <>
       <Function
@@ -88,4 +88,4 @@ function Software() {
   );
 }
 
-export default Software;
+export default SoftwareContent;

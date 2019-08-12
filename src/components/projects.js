@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import './projects.css';
-import Template from '../components/template';
 
 function Projects(props) {
   return (

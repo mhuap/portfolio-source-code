@@ -2,35 +2,42 @@ import React from 'react';
 import photo from '../images/photo.png';
 import '../components/about.css';
 import SEO from "../components/seo";
+import SocialFooter from "../components/SocialFooter";
 
 function About() {
   return (
-    <>
+    <div className="container">
       <SEO title="About" keywords={[`latinx`, `about`, `huapaya`,]} />
       <div className='full-for-center'>
         <div id='about' className='center'>
-          <img src={photo} alt='Wes Huapaya'/>
-          <div id='description'>
-            <h1>about me</h1>
-            <div id='info'>
+          <div id='about-content'>
+            <img src={photo} alt='Wes Huapaya'/>
+            <div id='description'>
+              <h1>about me</h1>
+              <div id='info'>
+                <p>
+                  <span>Name:</span>
+                  <span>Wes Huapaya</span>
+                </p>
+                <p>
+                  <span>Pronouns:</span>
+                  <span>He/They</span>
+                </p>
+              </div>
               <p>
-                <span>Name:</span>
-                <span>Wes Huapaya</span>
+                I'm a programmer who's passionate about approaching tech through
+                an anti-oppressive, intersectional lens.
               </p>
               <p>
-                <span>Pronouns:</span>
-                <span>He/They</span>
+                Also, I'm a cat person.
               </p>
+              <p className="back"><a href="/">{'>'} back</a></p>
             </div>
-            <p>
-              I'm passionate about using technology to tackle issues of social inequity
-              that impact marginalized communities.
-            </p>
-            <p className="back"><a href="/">{'>'} back</a></p>
           </div>
+          <SocialFooter />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
