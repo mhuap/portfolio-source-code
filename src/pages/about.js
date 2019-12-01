@@ -11,13 +11,13 @@ function About() {
       <div className='full-for-center'>
         <div id='about' className='center'>
           <div id='about-content'>
-            <img src={photo} alt='Wes Huapaya'/>
+            <img src={photo} alt='Matias Huapaya'/>
             <div id='description'>
               <h1>about me</h1>
               <div id='info'>
                 <p>
                   <span>Name:</span>
-                  <span>Wes Huapaya</span>
+                  <span>Matias Huapaya</span>
                 </p>
                 <p>
                   <span>Pronouns:</span>

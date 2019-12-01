@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Wes Huapaya`,
-    description: `Wes Huapaya's personal portfolio website. Learn more about my abilities as a software developer and graphic designer`,
-    author: `Wes Huapaya`,
+    title: `Matias Huapaya`,
+    description: `Matias Huapaya's personal portfolio website. Learn more about my abilities as a software developer and graphic designer`,
+    author: `Matias Huapaya`,
   },
   plugins: [
     {resolve: `gatsby-plugin-react-helmet`},
@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `wes-huapaya-portfolio`,
+        name: `matias-huapaya-portfolio`,
         short_name: `portfolio`,
         start_url: `/`,
         background_color: `#1B008C`,

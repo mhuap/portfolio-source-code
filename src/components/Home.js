@@ -14,7 +14,7 @@ function Home() {
           <p id='hi'>
             Hi, I'm
           </p>
-          <h1>wes huapaya</h1>
+          <h1>matias huapaya</h1>
       </div>
       <div id='scroll'>
         <Link to="projects" smooth={true}>
