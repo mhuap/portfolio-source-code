@@ -4,10 +4,13 @@ import face from '../images/full-portrait.png'
 // import { Link} from "react-scroll";
 import './Home.scss'
 // import Projects from './projects.js';
-const isSmallSize = ({ width }) => width < 768;
+// const isSmallSize = ({ width }) => width < 768;
 
-function Home({ isSmallSize }) {
+function Home({ isSmallSize, canUseDOM }) {
+  if (!canUseDOM) return null;
+
   let drawingContent;
+
   if (isSmallSize) {
     drawingContent =
     <>
@@ -48,8 +51,9 @@ function Home({ isSmallSize }) {
   );
 }
 
-const mapSizesToProps = sizes => ({
-  isSmallSize: isSmallSize(sizes),
+const mapSizesToProps = ({ width }) => ({
+  canUseDOM: !!width,
+  isSmallSize: width < 768,
 })
 
 export default withSizes(mapSizesToProps)(Home);
