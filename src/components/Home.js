@@ -25,7 +25,7 @@ function Home() {
 
   let drawingContent;
 
-  if (!isSmallSize) {
+  if (isSmallSize) {
     drawingContent =
     <>
       <div id='noP'>
