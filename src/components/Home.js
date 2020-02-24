@@ -1,15 +1,31 @@
-import React from 'react';
-import withSizes from 'react-sizes';
+import React, { useLayoutEffect, useState } from 'react';
+// import withSizes from 'react-sizes';
 import face from '../images/full-portrait.png'
 // import { Link} from "react-scroll";
 import './Home.scss'
 // import Projects from './projects.js';
 // const isSmallSize = ({ width }) => width < 768;
 
-function Home({ isSmallSize, canUseDOM }) {
-  if (!canUseDOM) return null;
+function useWindowSize() {
+  const [size, setSize] = useState([0, 0]);
+  useLayoutEffect(() => {
+    function updateSize() {
+      setSize([window.innerWidth, window.innerHeight]);
+    }
+    window.addEventListener('resize', updateSize);
+    updateSize();
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
+  return size;
+}
+
+function Home() {
+  const [width, height] = useWindowSize();
+  const isSmallSize = width < 768;
 
   let drawingContent;
+
+  console.log(width);
 
   if (isSmallSize) {
     drawingContent =
@@ -42,6 +58,7 @@ function Home({ isSmallSize, canUseDOM }) {
       </div>
     </>;
   }
+
   return (
     <div id='home'>
       <div id='drawing'>
@@ -51,9 +68,4 @@ function Home({ isSmallSize, canUseDOM }) {
   );
 }
 
-const mapSizesToProps = ({ width }) => ({
-  canUseDOM: !!width,
-  isSmallSize: width < 768,
-})
-
-export default withSizes(mapSizesToProps)(Home);
+export default Home;
