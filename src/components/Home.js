@@ -27,7 +27,21 @@ function Home() {
 
   console.log(width);
 
-  if (isSmallSize) {
+  if (!isSmallSize) {
+    drawingContent =
+    <>
+      <img src={face} alt='cartoon drawing of matias'/>
+      <div >
+        <h2>Hey, I'm</h2>
+        <h1>Matias.</h1>
+        <h2 id='home-subtitle'>I'm a <a href="#software">software developer</a><br/> + <a href="#design">designer</a>.</h2>
+        <p>
+          I build things by focusing on aesthetics and usability,
+          and I’m passionate about approaching tech through an anti-oppressive, intersectional lens.
+        </p>
+      </div>
+    </>;
+  } else {
     drawingContent =
     <>
       <div id='noP'>
@@ -42,20 +56,6 @@ function Home() {
         I build things by focusing on aesthetics and usability,
         and I’m passionate about approaching tech through an anti-oppressive, intersectional lens.
       </p>
-    </>;
-  } else {
-    drawingContent =
-    <>
-      <img src={face} alt='cartoon drawing of matias'/>
-      <div >
-        <h2>Hey, I'm</h2>
-        <h1>Matias.</h1>
-        <h2 id='home-subtitle'>I'm a <a href="#software">software developer</a><br/> + <a href="#design">designer</a>.</h2>
-        <p>
-          I build things by focusing on aesthetics and usability,
-          and I’m passionate about approaching tech through an anti-oppressive, intersectional lens.
-        </p>
-      </div>
     </>;
   }
 
