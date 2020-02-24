@@ -21,12 +21,9 @@ function useWindowSize() {
 
 function Home() {
   const [width, height] = useWindowSize();
-  // const isSmallSize = width < 768;
-  const isSmallSize = true;
+  const isSmallSize = width < 768;
 
   let drawingContent;
-
-  console.log(width);
 
   if (!isSmallSize) {
     drawingContent =
