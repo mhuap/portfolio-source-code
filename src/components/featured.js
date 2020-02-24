@@ -28,6 +28,7 @@ function Featured() {
               <li>Adobe XD</li>
             </ul>
           </FeaturedProject>
+          
           <FeaturedProject
             title='ezPath'
             description='A web-app to help people choose a school or program for post-secondary education. Users get personalized recommendations and have access to a selection of mentors.'
