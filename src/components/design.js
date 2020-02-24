@@ -1,34 +1,42 @@
 import React from 'react';
-import steviePoster from '../images/gallery/stevie-poster.png';
-// import stevieBanner from '../images/gallery/stevie-banner.png';
-import albumCover from '../images/gallery/album-no-text.jpg';
-import invisabilities from '../images/gallery/invisabilities.png';
-import cssu from '../images/gallery/justtable.png';
-import lwp from '../images/gallery/leadwithpride.png';
-import self from '../images/gallery/self-portrait.png';
+import GalleryPanel from '../components/galleryPanel.js';
+// import { StaticQuery, graphql } from "gatsby";
+// import Img from "gatsby-image";
 
-class Design extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+import steviePoster from '../images/gallery/stevie-mini.jpg';
+import qo from '../images/gallery/qo.jpg'
+import lwp from '../images/gallery/lwp.jpg';
+import './design.scss'
 
-  render() {
-    return (
-      <div id='design'>
-        <div className='gallery-col'>
-          <img src={steviePoster} alt='Poster for LGBTOUT'/>
-          <img src={cssu} alt='Header for CSSU poster'/>
-        </div>
-        <div id='mid-col' className='gallery-col'>
-          <img src={self} alt='Self-portrait'/>
-          <img src={albumCover} alt='original album cover'/>
-        </div>
-        <div className='gallery-col'>
-          <img src={lwp} alt='Lead With Pride'/>
-          <img src={invisabilities} alt='Poster for Invisabilities'/>
+function Design() {
+  return (
+    <div id='design'>
+      <h2>selected_works <span className='brackets'>{'{'} graphic_design {'}'}</span></h2>
+      <div className='page-content'>
+        <div className='row'>
+
+          <GalleryPanel
+            title='Queer Orientation'
+            subtitle={'University of Toronto\nSexual & Gender Diversity Office'}
+            src={qo}
+            url='queer-orientation'/>
+
+          <GalleryPanel
+            title='Lead With Pride'
+            subtitle={'University of Toronto\nSexual & Gender Diversity Office'}
+            src={lwp}
+            url='lwp'/>
+
+          <GalleryPanel
+            title='Stevie Boebi Event'
+            subtitle='LGBTOUT'
+            src={steviePoster}
+            url='stevieboebi'/>
+
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
-export default Design
+
+export default Design;

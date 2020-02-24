@@ -1,28 +1,75 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "gatsby";
+import filler from '../images/filler.jpeg';
 
-function Function ({ name, subtitle, children }) {
-  return (
-    <div className='function'>
-        <h3>{name} {'{'}</h3>
-        {subtitle ? <Subtitle text={subtitle}/> : ""}
-        {children}
-        <h3>{'}'}</h3>
-    </div>
-  );
-};
+// <button onClick={this.toggle.bind(this)}>{'Read ' + (this.state.open ? 'Less' : 'More')}</button>
+// <div className={'collapse' + (this.state.open ? '-show' : '')} >
+//   {this.props.children}
+// </div>
 
-function Subtitle ({text}) {
-  return (
-    <div className='subtitle'>
-      <div className='mobileSub'>
-        <p className='slashes'> {'//'}</p>
-        <p className='subText'>
-           {text}
-        </p>
-        <div className='highlight'></div>
+class Function extends React.Component {
+
+  render() {
+    const path = '/projects/' + this.props.url;
+
+    return (
+      <div className='function'>
+        <Link
+          className='software-img'
+          to={path}>
+          <img
+            alt={this.props.name}
+            src={this.props.src === '' ?  filler : require(`../images/${this.props.src}`)} />
+        </Link>
+        <div className='function-text'>
+          <h3 className='function-title'>
+            <Link to={path}>{this.props.name}</Link>
+          </h3>
+
+          {this.props.children}
+
+          <Link className='btn' to={path}>Read More →</Link>
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
+
+// class Title extends React.Component {
+//   constructor(props){
+//     super(props);
+//   }
+//
+//   createHighlight() {
+//     const subText = this.props.text.split(" ");
+//     const count = subText.length;
+//     const highlight = [];
+//
+//     for (let i = 0; i < count; i++) {
+//
+//       highlight.push(
+//         <span className='highlight' key={i}>
+//           <span className={'highlight-text' + (i === count - 1 ? ' highlight-last' : '')}>{subText[i]}</span>
+//           <span className={'highlight-color' + (i === 0 ? ' highlight-first' : '')}></span>
+//         </span>
+//       )
+//     }
+//
+//     return highlight
+//   }
+// 
+//   render(){
+//     return (
+//       <h3 className='function-title'>
+//         {this.createHighlight()}
+//       </h3>
+//     );
+//   }
+//
+// }
+// <span className='highlight slashes'>
+//   <span className='highlight-text'>{'//'}</span>
+//   <span className='highlight-color'></span>
+// </span>
 
 export default Function;

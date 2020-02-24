@@ -1,13 +1,23 @@
 import React from "react";
 import '../components/index.css';
-import Template from '../components/template';
+import PageTemplate from '../components/PageTemplate';
+import Home from '../components/Home';
+import Featured from '../components/featured';
 import SoftwareContent from '../components/softwareContent';
+import Design from '../components/design';
+import SEO from "../components/seo";
 
 function IndexPage(props) {
   return (
-    <Template software={true}>
-      <SoftwareContent />
-    </Template>
+    <>
+      <SEO title="" keywords={[`portfolio`, `website`, `huapaya`, `development`]} />
+      <PageTemplate>
+        <Home />
+        <Featured />
+        <SoftwareContent />
+        <Design />
+      </PageTemplate>
+    </>
   );
 }
 

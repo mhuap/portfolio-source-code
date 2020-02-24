@@ -1,0 +1,74 @@
+div#design {
+  display: block;
+}
+
+#design .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#design .galleryPanel {
+  width: 100%;
+}
+
+#design img {
+  width: 100%;
+}
+
+#design h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+
+  a {
+    text-decoration: none;
+    color: var(--black);
+  }
+
+  a:hover {
+    color: var(--med);
+  }
+}
+
+#design .subtitle {
+  margin-top: 0.25rem;
+  margin-bottom: 3rem;
+}
+
+#design .subtitle p {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1rem;
+}
+
+.gallery-img img {
+  display: block;
+  mix-blend-mode: screen;
+}
+
+.gallery-img {
+  display: block;
+  background-color: transparent;
+  transition: background-color 0.25s ease;
+
+  &:hover {
+    background-color: var(--med);
+  }
+}
+
+
+@media (min-width: 768px) {
+  #design .galleryPanel {
+    width: 49%;
+  }
+
+}
+
+@media (min-width: 980px) {
+
+  #design .galleryPanel {
+    width: 32%;
+  }
+
+}

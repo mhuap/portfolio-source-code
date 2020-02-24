@@ -1,0 +1,171 @@
+#about-header {
+  display: flex;
+  width: 100%;
+  margin: 6rem auto;
+
+  & > * {
+    width: 100%;
+  }
+
+  img {
+    display: block;
+    object-fit: scale-down;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  h1 {
+    margin: 1rem 0;
+    line-height: 3rem;
+  }
+
+  h2 {
+    color: var(--grey);
+    margin-bottom: 0;
+
+  }
+
+  #description {
+    text-align: left;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+
+}
+
+#page #about-skills {
+  // width: 100%;
+  // box-sizing: border-box;
+}
+
+#about-skills {
+  margin-bottom: 6rem;
+  width: 100% !important;
+  box-sizing: border-box;
+
+  & > * {
+    width: 100%;
+  }
+
+  h2 span.brackets {
+    display: block;
+  }
+}
+
+.project-header--list {
+  margin-bottom: 2rem;
+
+  span {
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+
+  ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'PT Mono', monospace;
+  }
+
+}
+
+.toggleList {
+  border-top: 1px solid var(--darker-white);
+  position: relative;
+  overflow: hidden;
+
+  h2 {
+    margin: 1rem 0;
+
+    .arrow {
+      transform: rotate(0deg);
+      transform-origin: center;
+      display: inline-block;
+      padding-left: 8px;
+      width: 1rem;
+      height: 1.5rem;
+      // transition: 0.5s;
+    }
+
+    .arrow.active {
+      transform: rotate(90deg);
+    }
+  }
+
+  .listgroup {
+    padding-left: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 0;
+  }
+
+  .active {
+    height: auto;
+  }
+}
+
+@media (min-width: 425px) {
+  #about-header {
+    h2 {
+      font-size: 1.75rem;
+    }
+  }
+
+  #about-skills {
+    box-sizing: border-box;
+
+    h2 span.brackets {
+      display: inline;
+    }
+
+  }
+}
+
+@media (min-width: 768px) {
+
+  #about-header {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row !important;
+
+    & > * {
+      width: 49%;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+    }
+
+
+  }
+
+  #about-skills {
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    .toggleList {
+      .listgroup {
+        flex-direction: row;
+      }
+    }
+
+  }
+
+}
+
+@media (min-width: 1000px) {
+  #about-header {
+    h2 {
+      font-size: 1.75rem;
+    }
+  }
+  #about-skills {
+    width: 1000px !important;
+    box-sizing: content-box;
+  }
+}

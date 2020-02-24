@@ -1,30 +1,55 @@
 import React from 'react';
-import logo from '../images/logo.png'
-import './Home.css'
-import { Link} from "react-scroll";
+import withSizes from 'react-sizes';
+import face from '../images/full-portrait.png'
+// import { Link} from "react-scroll";
+import './Home.scss'
 // import Projects from './projects.js';
+const isSmallSize = ({ width }) => width < 768;
 
-function Home() {
-  return (
+function Home({ isSmallSize }) {
+  let drawingContent;
+  if (isSmallSize) {
+    drawingContent =
     <>
-    <a id='about-link' href='/about'>Learn more about me!</a>
-    <div id='home' className='full-for-center'>
-      <div className='center'>
-          <img src={logo} alt='cute ghost logo'/>
-          <p id='hi'>
-            Hi, I'm
-          </p>
-          <h1>wes huapaya</h1>
+      <div id='noP'>
+        <img src={face} alt='cartoon drawing of matias'/>
+        <div >
+          <h2>Hey, I'm</h2>
+          <h1>Matias.</h1>
+          <h2 id='home-subtitle'>I'm a <a href="#software">software developer</a><br/> + <a href="#design">designer</a>.</h2>
+        </div>
       </div>
-      <div id='scroll'>
-        <Link to="projects" smooth={true}>
-          <span></span>
-          <small id="scroll-text">scroll down</small>
-        </Link>
+      <p>
+        I build things by focusing on aesthetics and usability,
+        and I’m passionate about approaching tech through an anti-oppressive, intersectional lens.
+      </p>
+    </>;
+  } else {
+    drawingContent =
+    <>
+      <img src={face} alt='cartoon drawing of matias'/>
+      <div >
+        <h2>Hey, I'm</h2>
+        <h1>Matias.</h1>
+        <h2 id='home-subtitle'>I'm a <a href="#software">software developer</a><br/> + <a href="#design">designer</a>.</h2>
+        <p>
+          I build things by focusing on aesthetics and usability,
+          and I’m passionate about approaching tech through an anti-oppressive, intersectional lens.
+        </p>
+      </div>
+    </>;
+  }
+  return (
+    <div id='home'>
+      <div id='drawing'>
+        {drawingContent}
       </div>
     </div>
-    </>
   );
 }
 
-export default Home;
+const mapSizesToProps = sizes => ({
+  isSmallSize: isSmallSize(sizes),
+})
+
+export default withSizes(mapSizesToProps)(Home);

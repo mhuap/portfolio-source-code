@@ -1,0 +1,181 @@
+.full-bg {
+    background-color: var(--almost-white);
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 2rem 0 4rem 0!important;
+    margin-bottom: 4rem !important;
+
+    #featured {
+
+      #featured-projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      a.featured-proj {
+        color: inherit;
+        text-decoration: inherit;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        transition: box-shadow .2s ease, -webkit-box-shadow .2s ease;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+
+        &:hover {
+          box-shadow: 0 2px 40px 0 rgba(157,153,168,0.4);
+        }
+
+        h3:hover {
+          color: var(--black);
+        }
+
+        img {
+          display: block;
+          width: 100%;
+        }
+
+        .img-badge {
+          position: relative;
+          display: flex;
+          justify-content: center;
+
+          .tag {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 0 0 4px 4px;
+
+            .reward {
+              position: relative;
+              z-index: 1;
+              margin-right: 0.5rem;
+              background-color: white;
+              border: 6px solid white;
+              border-radius: 50%;
+            }
+
+            span {
+              color: var(--black);
+              font-size: 0.75rem;
+              font-weight: bold;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              height: 0.75rem;
+              line-height: 0.75rem;
+
+              background-color: white;
+              padding: 0.25rem 0.75rem 0.25rem 0.5rem;
+              margin-left: -1rem;
+              border-radius: 0 2rem 2rem 0;
+            }
+
+            svg {
+              height: 1.5rem;
+              fill: var(--med);
+              display: block;
+            }
+
+          }
+        }
+
+        .techs {
+          margin: 0 1rem;
+        }
+
+        .featured-text {
+          padding: 1rem;
+          padding-bottom: 0;
+
+          p {
+            margin-top: 0;
+          }
+        }
+
+        a.btn {
+          margin-left: 1rem;
+          margin-top: 1rem;
+          display: inline-block;
+          color: var(--med);
+          border-bottom: 1px solid white;
+          font-weight: 700;
+          text-decoration: none;
+          width: auto !important;
+
+          &:hover {
+            border-bottom: 1px solid var(--med);
+          }
+        }
+      }
+
+    }
+}
+
+@media (min-width: 425px) {
+  .full-bg {
+    #featured {
+      a.featured-proj {
+        .img-badge {
+          .tag {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            display: inline-flex;
+            align-items: center;
+            // width: 250px;
+            width: auto;
+            // transition: width .5s;
+            background-color: transparent;
+            // box-shadow: 0 0 16px rgba(255,255,255,0.5);
+            // padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+            // border-radius: 2rem;
+
+            .reward {
+              position: relative;
+              z-index: 1;
+              margin-right: 0.5rem;
+              background-color: white;
+              border: 6px solid white;
+              border-radius: 50%;
+            }
+
+            span {
+              color: var(--black);
+              font-size: 0.75rem;
+              font-weight: bold;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              height: 0.75rem;
+              line-height: 0.75rem;
+
+              background-color: white;
+              padding: 0.25rem 0.75rem 0.25rem 0.5rem;
+              margin-left: -1rem;
+              border-radius: 0 2rem 2rem 0;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  #page .full-bg #featured-projects {
+    flex-direction: row;
+  }
+
+  #featured-projects a {
+    width: 49% !important;
+    margin-bottom: 0 !important;
+  }
+
+  // .full-bg #featured a.featured-proj .img-badge .tag {
+  //   width: 360px;
+  // }
+
+}
