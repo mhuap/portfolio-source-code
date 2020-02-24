@@ -10,7 +10,9 @@ function Featured() {
   return (
     <div className='full-bg'>
       <div id='featured'>
+
         <h2>featured <span className='brackets'>{'{'} projects {'}'}</span></h2>
+
         <div id='featured-projects'>
           <FeaturedProject
             title='everwear'
@@ -19,6 +21,7 @@ function Featured() {
             src='everwear.gif'
             url='everwear'
           >
+
             <ul className='techs'>
               <li>Google Cloud Functions</li>
               <li>Conversational Form</li>
@@ -27,8 +30,9 @@ function Featured() {
               <li>Puppeteer</li>
               <li>Adobe XD</li>
             </ul>
+
           </FeaturedProject>
-          
+
           <FeaturedProject
             title='ezPath'
             description='A web-app to help people choose a school or program for post-secondary education. Users get personalized recommendations and have access to a selection of mentors.'
@@ -43,7 +47,9 @@ function Featured() {
               <li>iMovie</li>
               <li>Logic Pro X</li>
             </ul>
+
           </FeaturedProject>
+
         </div>
       </div>
     </div>
@@ -64,6 +70,7 @@ function FeaturedProject({ title, description, award, src, url, children }) {
         </div>
         <img alt={title} src={src === '' ? filler : require(`../images/${src}`)}/>
       </div>
+
       <div className='featured-text'>
         <h3>{title}</h3>
         <p>{description}</p>
@@ -71,7 +78,6 @@ function FeaturedProject({ title, description, award, src, url, children }) {
 
       {children}
 
-      <Link className='btn' to={path}>Read More →</Link>
     </Link>
   );
 }
