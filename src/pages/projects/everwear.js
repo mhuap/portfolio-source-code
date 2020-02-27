@@ -55,10 +55,10 @@ function Everwear() {
 
       <h3>Build</h3>
 
-      <p><strong>Front-end: </strong>We built on ReactJS and used <a href="https://space10-community.github.io/conversational-form/docs/1.0.0/getting-started/">Conversational Form</a> for the chatbot</p>
+      <p><strong>Frontend: </strong>We built on ReactJS and used <a href="https://space10-community.github.io/conversational-form/docs/1.0.0/getting-started/">Conversational Form</a> for the chatbot</p>
 
-      <p><strong>Back-end: </strong>We used Node.js and Google Cloud Functions for the back-end.
-      Puppeteer handled scraping images from Google custom searches.</p>
+      <p><strong>Backend: </strong>We used Node.js and Google Cloud Functions for the backend.
+      Puppeteer handled scraping images and links from Google custom searches.</p>
 
       <h3>Brand</h3>
       <figure>

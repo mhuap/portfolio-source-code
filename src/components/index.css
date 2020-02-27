@@ -114,6 +114,11 @@ footer a:hover {
   color: black;
 }
 
+figcaption {
+  font-size: 14px;
+  font-style: italic;
+}
+
 /* List styles */
 
 /* classes and ids */
