@@ -6,7 +6,7 @@ function TweetImg() {
     <Project
       title='Queer Orientation'
       date='09.2019'
-      description={`Print and digital promotional materials for Queer Orientation - an annual week of LGBTQ-focused programming across all three campuses of U of T`}
+      description={`Print and digital promotional materials for Queer Orientation - an annual week of LGBTQ-focused programming across all three U of T campuses.`}
       team='N/A'
       role="Graphic designer"
       context="Work for the University of Toronto - Sexual & Gender Diversity Office"

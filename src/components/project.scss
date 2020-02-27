@@ -108,6 +108,10 @@
     margin-top: -1rem;
   }
 
+  ol ol {
+    margin-top: 0;
+  }
+
   strong {
     color: var(--black);
   }
@@ -126,6 +130,45 @@
       width: 100%;
       height: 100%;
     }
+  }
+
+  blockquote {
+    padding: 2rem 0;
+    margin: 2rem auto;
+    box-sizing: border-box;
+    color: var(--black);
+    font-style: italic;
+    font-size: 1.2rem;
+    position: relative;
+
+    &:before, &:after {
+      font-family: 'PT Mono', monospace;
+      font-size: 6rem;
+      position: absolute;
+      font-style: normal;
+      color: var(--med);
+    }
+
+    &:before {
+      content: '“';
+      left: -10px;
+      top:-10px;
+    }
+
+    &:after {
+      content: '”';
+      right: -10px;
+      bottom: -70px;
+    }
+  }
+
+  h4 {
+    color: var(--black);
+    font-size: 1.25rem;
+  }
+
+  figure img {
+    width: 100%;
   }
 
 }
@@ -165,5 +208,27 @@
     .project-video {
       padding-bottom: 41.4583%;
     }
+
+    blockquote {
+      padding: 0 2.5rem;
+    }
+
+    .demo {
+      text-align: center;
+
+      a {
+        color: white;
+        background-color: var(--med);
+        padding: 0.5rem 1rem;
+        margin: 0 0.5rem;
+        text-decoration: none;
+      }
+
+      a:hover {
+        background-color: var(--black);
+      }
+
+    }
+
   }
 }

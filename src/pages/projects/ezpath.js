@@ -45,8 +45,10 @@ function Ezpath() {
         <li>Diana Kim: Campus Talent Acquisition Lead</li>
       </ul>
 
-      <p>Top 3 teams, judges, and Professor Ilona Posner:</p>
-      <img src={group} alt='top 3 teams in Competition'/>
+      <figure>
+        <img src={group} alt='top 3 teams in Competition'/>
+        <figcaption>Top 3 teams, judges, and Professor Ilona Posner</figcaption>
+      </figure>
 
 
     </Project>
