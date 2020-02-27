@@ -18,7 +18,7 @@ function Everwear() {
 
       <div className='demo'>
         <a href='https://e-wai.github.io/UofTHacksVII/'>Live Demo</a>
-        <a href='https://e-wai.github.io/UofTHacksVII/'>Github</a>
+        <a href='https://github.com/e-wai/UofTHacksVII'>Github</a>
       </div>
 
       <h3>Inspiration</h3>
