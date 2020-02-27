@@ -59,8 +59,7 @@ function TweetImg() {
       <h3>What's Next</h3>
 
       <p>Currently, I am happy with the deployed version of tweet-img but this is a minimum viable product -
-      I have many plans for upcoming features. Not to mention, it only supports
-      <a href='https://github.com/mhuap/tweet-img#tweet-support'>certain kinds of tweets</a> at the moment.</p>
+      I have many plans for upcoming features. Not to mention, it only supports <a href='https://github.com/mhuap/tweet-img#tweet-support'>certain kinds of tweets</a> at the moment.</p>
 
       <p>Future customization features will include backgrounds using gradients or an uploaded image,
       and letting the tweet content stand alone without a white background.</p>
