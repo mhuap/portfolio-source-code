@@ -7,21 +7,24 @@ import step1b from '../../images/lwp/p12@2x.jpg';
 import sketches from '../../images/lwp/sketches.jpg';
 import final from '../../images/lwp/final options@2x.jpg';
 
-function TweetImg() {
+function Lwp() {
   return (
     <Project
       title='Lead With Pride'
-      date='07.2019'
+      date='06.2019'
       description={`Logo design for Lead with Pride - an annual leadership conference for LGBTQ+ students.`}
       team='N/A'
       role="Graphic designer"
       context="Work for the University of Toronto - Sexual & Gender Diversity Office"
-      techs={["Adobe Illustrator"]}
+      techs={["Logo design", "Branding", "Adobe Illustrator"]}
       featuredimage='gallery/lwp.jpg'
       award=''
     >
 
-      <img src={brand} alt='Lead with Pride branding'/>
+      <figure>
+        <img src={brand} alt='Lead with Pride branding'/>
+        <figcaption>Lead with Pride logo contexts</figcaption>
+      </figure>
 
       <h3>Background</h3>
 
@@ -40,7 +43,7 @@ function TweetImg() {
       and leadership.
       </p>
 
-      <p>The <i>Lead With Pride</i> co-chairs approached me asking me to design a logo
+      <p>The <i>Lead With Pride</i> co-chairs asked me to design a logo
       in time for their sixth annual <i><a href='https://www.facebook.com/events/329467091289285/'>Lead with Pride: Executive Jumpstart conference</a></i>.
       The logo was also used for the <i>Lead With Pride</i> February conference.
       </p>
@@ -119,4 +122,4 @@ function TweetImg() {
   )
 }
 
-export default TweetImg;
+export default Lwp;

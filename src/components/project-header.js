@@ -22,7 +22,7 @@ function ProjectHeader({title, date, description, team, role, context, techs, aw
         </div>
         <div>
           {award === '' ? '' : <InfoLine name='Award' text={award}/>}
-          <InfoList name="Technologies" group={techs}/>
+          <InfoList name="Skills" group={techs}/>
         </div>
       </div>
 
