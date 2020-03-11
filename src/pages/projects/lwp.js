@@ -23,7 +23,7 @@ function Lwp() {
 
       <figure>
         <img src={brand} alt='Lead with Pride branding'/>
-        <figcaption>Lead with Pride logo contexts</figcaption>
+        <figcaption>Lead with Pride logo and colors </figcaption>
       </figure>
 
       <h3>Background</h3>
