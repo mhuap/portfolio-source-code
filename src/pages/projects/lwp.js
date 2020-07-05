@@ -11,7 +11,7 @@ function Lwp() {
   return (
     <Project
       title='Lead With Pride'
-      date='06.2019'
+      date='JUN.2019'
       description={`Logo design for Lead with Pride - an annual leadership conference for LGBTQ+ students.`}
       team='N/A'
       role="Graphic designer"

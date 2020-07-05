@@ -7,7 +7,7 @@ function Stevie() {
   return (
     <Project
       title='Stevie Boebi'
-      date='03.2019'
+      date='MAR.2019'
       description={`Print and digital promotional materials for a Stevie Boebi's presentation at the University of Toronto.`}
       team='N/A'
       role="Graphic Designer"

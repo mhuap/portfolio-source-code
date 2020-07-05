@@ -6,7 +6,7 @@ function Everwear() {
   return (
     <Project
       title='everwear'
-      date='28.01.2020'
+      date='28.JAN.2020'
       description={`A web-app that suggests sustainable alternatives to clothes the user is already interested in buying.`}
       team='Dhruv Sharma, Andrew So, Emma Wai'
       role="Front-end developer, UX/UI Designer, and graphic designer"

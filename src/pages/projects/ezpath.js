@@ -7,7 +7,7 @@ function Ezpath() {
   return (
     <Project
       title='ezPath'
-      date='04.12.2019'
+      date='04.DEC.2019'
       description={`UI/UX design for a web-app to help people choose a school or program for post-secondary education.
       Users get personalized recommendations and have access to a selection of mentors.`}
       team='Anissa Baird, Aizah Bakhtiyar, Aleashea Valentine'

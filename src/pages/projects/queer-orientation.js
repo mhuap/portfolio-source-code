@@ -5,7 +5,7 @@ function QueerOrientation() {
   return (
     <Project
       title='Queer Orientation'
-      date='09.2019'
+      date='SEP.2019'
       description={`Print and digital promotional materials for Queer Orientation - an annual week of
         LGBTQ-focused programming across all three U of T campuses.`}
       team='N/A'

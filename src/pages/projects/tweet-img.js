@@ -6,7 +6,7 @@ function TweetImg() {
   return (
     <Project
       title='tweet-img'
-      date='23.01.2020'
+      date='JAN.2020'
       description={`Web app converts tweets into images with colored backgrounds. Perfect for sharing tweets
         on Instagram.`}
       team='N/A'

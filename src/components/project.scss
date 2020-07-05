@@ -171,6 +171,24 @@
     width: 100%;
   }
 
+  .demo {
+    text-align: center;
+    font-family: Rubik, sans-serif;
+
+    a {
+      color: white;
+      background-color: var(--med);
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: var(--black);
+    }
+
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -211,23 +229,6 @@
 
     blockquote {
       padding: 0 2.5rem;
-    }
-
-    .demo {
-      text-align: center;
-
-      a {
-        color: white;
-        background-color: var(--med);
-        padding: 0.5rem 1rem;
-        margin: 0 0.5rem;
-        text-decoration: none;
-      }
-
-      a:hover {
-        background-color: var(--black);
-      }
-
     }
 
   }

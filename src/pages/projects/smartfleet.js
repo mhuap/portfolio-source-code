@@ -5,7 +5,7 @@ function SmartFleet() {
   return (
     <Project
       title='SmartFleet'
-      date='28.01.2020'
+      date='28.JAN.2020'
       description={`A car fleet management system for B2B use. Managers assign tasks to drivers,
       remotely give them access to the car, and keep track of their location on the job.`}
       team='Michael Chen, Bryan Liu, Ming Xu'
