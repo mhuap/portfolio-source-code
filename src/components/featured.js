@@ -9,7 +9,7 @@ import filler from '../images/filler.jpeg';
 function Featured() {
   return (
     <div className='full-bg'>
-      <div id='featured'>
+      <div id='featured' className='page-section'>
 
         <h2>featured <span className='brackets'>{'{'} projects {'}'}</span></h2>
 

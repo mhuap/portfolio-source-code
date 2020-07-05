@@ -4,7 +4,7 @@ import './software.scss';
 
 function SoftwareContent() {
   return (
-    <div id='software'>
+    <div id='software' className='page-section'>
       <h2>selected_works <span className='brackets'>{'{'} software_development {'}'}</span></h2>
       <div id='functions' className='page-content'>
         <Function

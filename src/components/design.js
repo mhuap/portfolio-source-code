@@ -10,20 +10,20 @@ import './design.scss'
 
 function Design() {
   return (
-    <div id='design'>
+    <div id='design' className='page-section'>
       <h2>selected_works <span className='brackets'>{'{'} graphic_design {'}'}</span></h2>
       <div className='page-content'>
         <div className='row'>
 
           <GalleryPanel
             title='Queer Orientation'
-            subtitle={'University of Toronto\nSexual & Gender Diversity Office'}
+            subtitle={'University of Toronto - Sexual & Gender Diversity Office'}
             src={qo}
             url='queer-orientation'/>
 
           <GalleryPanel
             title='Lead With Pride'
-            subtitle={'University of Toronto\nSexual & Gender Diversity Office'}
+            subtitle={'University of Toronto - Sexual & Gender Diversity Office'}
             src={lwp}
             url='lwp'/>
 

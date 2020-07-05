@@ -1,5 +1,5 @@
 #home {
-  margin: 6rem auto;
+  margin: 2rem auto 3rem auto;
 
   img {
     // width: 25%;
@@ -35,7 +35,6 @@
   p {
     margin: 0;
     max-width: 320px;
-    margin-top: 1.5rem;
   }
 
   br {
@@ -45,7 +44,7 @@
   #drawing {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     max-width: none;
 
@@ -58,19 +57,16 @@
   }
 
   #home-subtitle {
-    margin-bottom: 1rem;
+    margin-bottom: 5px;
   }
 }
 
 @media (min-width: 375px){
   #home #drawing {
-    #noP {
-      justify-content: flex-start;
-    }
 
     h1 {
-      line-height: 3rem;
-      font-size: 3rem;
+      font-size: 2rem;
+      margin-bottom: -10px;
     }
 
     h2 {
@@ -83,22 +79,12 @@
   }
 
   #home p {
-    max-width: 380px;
+    max-width: 550px;
   }
 }
 
 @media (min-width: 425px) {
   #home #drawing {
-    max-width: 390px;
-
-    #noP {
-      align-items: flex-start;
-    }
-
-    h1 {
-      line-height: 80px;
-      font-size: 80px;
-    }
 
     h2 {
       font-size: 1.2rem;
@@ -111,7 +97,7 @@
   #home {
 
     img {
-      width: 25%;
+      width: 17%;
       padding-right: 2rem;
       max-height: none;
     }
@@ -119,9 +105,10 @@
     #drawing {
       flex-direction: row;
       max-width: none;
+      align-items: center;
 
       h2 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
       }
     }
 

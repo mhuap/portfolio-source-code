@@ -12,7 +12,7 @@ function Project({ title, date, description, team, role, context, techs, feature
   <>
     <SEO title={title} keywords={[`portfolio`, `website`, `huapaya`, `development`]} />
     <PageTemplate>
-      <div className="page-content project-content">
+      <div className="page-content project-content page-section">
         <div>
           <ProjectHeader
             title={title}

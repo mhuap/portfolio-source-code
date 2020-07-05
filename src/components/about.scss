@@ -18,7 +18,7 @@
 
   h1 {
     margin: 1rem 0;
-    line-height: 3rem;
+    line-height: 2rem;
   }
 
   h2 {
@@ -56,6 +56,7 @@
 
 .project-header--list {
   margin-bottom: 2rem;
+  width: 50%;
 
   span {
     display: inline-block;
@@ -71,48 +72,10 @@
 
 }
 
-.toggleList {
-  border-top: 1px solid var(--darker-white);
-  position: relative;
-  overflow: hidden;
-
-  h2 {
-    margin: 1rem 0;
-
-    .arrow {
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-      transform-origin: center;
-      display: inline-block;
-      padding-left: 8px;
-      width: 1rem;
-      height: 1.5rem;
-      // transition: 0.5s;
-    }
-
-    .arrow.active {
-      -webkit-transform: rotate(90deg);
-      -moz-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      -o-transform: rotate(90deg);
-      transform: rotate(90deg);
-    }
-  }
-
-  .listgroup {
-    padding-left: 2.25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 0;
-  }
-
-  .active {
-    height: auto;
-  }
+.listgroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media (min-width: 425px) {
@@ -129,6 +92,10 @@
       display: inline;
     }
 
+    .listgroup {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 }
 
@@ -156,24 +123,22 @@
       font-size: 1.2rem;
     }
 
-    .toggleList {
-      .listgroup {
-        flex-direction: row;
-      }
-    }
-
   }
+
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   #about-header {
     h2 {
       font-size: 1.75rem;
     }
   }
   #about-skills {
-    width: 1000px !important;
+    width: 1200px !important;
     box-sizing: content-box;
+  }
+  .project-header--list {
+    width: auto;
   }
 }

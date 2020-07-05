@@ -4,16 +4,14 @@ import '../components/about.scss';
 
 import SEO from "../components/seo";
 import PageTemplate from '../components/PageTemplate';
-import ToggleList from '../components/ToggleList';
+import { InfoList } from "../components/projectInfo.js";
 
 function About() {
-  const prototyping = ["Adobe XD", "Axure RP9", "Figma"];
-  const toolsframe = ["Android Platform API", "Bootstrap", "Flask", "Gatsby", "JDBC", "MongoDB", "ReactJS", "Unity3D", "Wordpress"];
-  const techs = ["Python", "Java", "C", "C#", "HTML5/CSS3", "Javascript", "SQL"];
-
-  const tools = ["Adobe Illustrator", "Adobe After Effects", "Inkscape"];
+  const techLangs = ["Python", "HTML5/CSS3", "Javascript",  "Java", "C", "C#", "SQL"];
+  const devTools = ["Bootstrap", "ReactJS", "Flask", "Gatsby", "JDBC", "MongoDB", "Unity3D", "Wordpress"];
+  const designTools = ["Adobe Illustrator", "Adobe After Effects", "Inkscape"];
   const branding = ["Logo design", "Brand identity", "Poster design", "Social media banners"];
-  const other = ["2D animation", "Audio recording/editing", "Video editing"];
+  const other = ["Audio recording + editing", "Video editing", "Spanish speaking + writing"];
 
   const lgbtout = ["Drop-In-Center Volunteer (2016-2019)", "Administrative Director (2019-2020)"]
   const newpride = ["Finance Director (2019-2020)"]
@@ -24,49 +22,38 @@ function About() {
       <SEO title="About Me" keywords={[`latinx`, `about`, `huapaya`,]} />
       <PageTemplate>
 
-        <div id='about-header'>
+        <div id='about-header' className='page-section'>
           <div id='description'>
-            <h1>About Me</h1>
-            <h2>Hey, I'm Matias (<a href='https://www.mypronouns.org/'>he/him</a>).</h2>
+            <h1>Hey there 👋🏽</h1>
+            <h2>I'm Matias Huapaya (<a href='https://www.mypronouns.org/'>he/him</a>).</h2>
             <p>
-              I’m passionate about nurturing a culture of intersectionality and compassion in tech.
-              Also, I’m a cat person and music nerd.
+
             </p>
             <p>
-              I’m currently an undergraduate student at UofT studying Computer Science and Sexual Diversity Studies.
+              I am currently an undergraduate student at the University of Toronto
+              studying Computer Science and Sexual Diversity Studies.
+            </p>
+            <p>
+              Some other things about me: <br/>
+              🇵🇪 I'm Peruvian but also a <a href="https://en.wikipedia.org/wiki/Third_culture_kid">Third Culture Kid</a> <br/>
+              🌈 I volunteer with LGBTQ+ groups on campus <br/>
+              🎸 I play guitar, sing, and occasionally write songs <br/>
+              🖖🏽 I'm a <a href='https://en.wikipedia.org/wiki/Nerdfighteria'>nerdfighter</a> <br/>
+              🎮 I play Fortnite <br/>
+              😻 I love cats
             </p>
           </div>
           <img src={photo} alt='Matias Huapaya'/>
         </div>
 
-        <div id='about-skills'>
-          <ToggleList
-            title="skills: software_development"
-            name1="Prototyping"
-            name2="Tools + Frameworks"
-            name3="Technical Languages"
-            list1={prototyping}
-            list2={toolsframe}
-            list3={techs}
-          />
-          <ToggleList
-            title="skills: graphic_design"
-            name1="Tools"
-            name2="Branding"
-            name3="Other"
-            list1={tools}
-            list2={branding}
-            list3={other}
-          />
-          <ToggleList
-            title="volunteer_work"
-            name1="LGBTOUT"
-            name2="NewPRIDE"
-            name3=""
-            list1={lgbtout}
-            list2={newpride}
-            list3={[]}
-          />
+        <div id='about-skills' className='page-section'>
+          <h2>skills</h2>
+          <div className='listgroup'>
+            <InfoList name='Technical Languages' group={techLangs}/>
+            <InfoList name='Development Tools' group={devTools}/>
+            <InfoList name='Design Tools'  group={designTools}/>
+            <InfoList name='Miscallaneous'  group={other}/>
+          </div>
         </div>
 
       </PageTemplate>
