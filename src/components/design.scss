@@ -1,5 +1,13 @@
-div#design {
+div#design, div#demo {
   display: block;
+}
+
+div#demo {
+  align-self: stretch;
+}
+
+#demo .page-content {
+  width: 100%;
 }
 
 #design .row {
@@ -67,4 +75,10 @@ div#design {
     width: 45%;
   }
 
+}
+
+@media (min-width: 1200px) {
+  div#demo {
+    align-self: center;
+  }
 }

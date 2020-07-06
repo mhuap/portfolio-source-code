@@ -29,6 +29,10 @@
           box-shadow: 0 2px 40px 0 rgba(157,153,168,0.4);
         }
 
+        h3 {
+          display: inline-block;
+        }
+
         h3:hover {
           color: var(--black);
         }
@@ -48,7 +52,8 @@
             position: absolute;
             display: flex;
             align-items: center;
-            background-color: white;
+            top: 0.5rem;
+            left: 0.5rem;
             border-radius: 0 0 4px 0;
             width: auto;
 
@@ -63,7 +68,7 @@
 
             span {
               color: var(--black);
-              font-size: 0.65rem;
+              font-size: 0.6rem;
               font-weight: bold;
               text-transform: uppercase;
               letter-spacing: 1px;
@@ -96,7 +101,7 @@
           padding-bottom: 0;
 
           p {
-            margin-top: 0;
+            margin-top: 1rem;
           }
         }
 
@@ -144,8 +149,6 @@
             position: absolute;
             top: 1rem;
             left: 1rem;
-            display: inline-flex;
-            align-items: center;
             // width: 250px;
             // width: auto;
             // transition: width .5s;

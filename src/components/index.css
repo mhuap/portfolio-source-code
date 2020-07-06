@@ -5,13 +5,13 @@
     --lighter: #4D4DFF;
     --light-blue: #9CBBFF;
     --darker-white: #edf0f5;
-    --almost-white: #f7f9fc;
+    --almost-white: rgba(156, 187, 255,.1);
     --black: #18171f;
 }
 
 /* #E9F1FF */
 
-@import url('https://fonts.googleapis.com/css?family=PT+Mono|Rubik|Heebo:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Mono|Rubik:400,700&display=swap');
 
 html {
   font-size: 16px;
@@ -31,7 +31,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Rubik', sans-serif;
   color: var(--grey);
 }
 
@@ -57,7 +57,7 @@ button:focus {
 }
 
 h1, h2, h3 {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 h1, h2 {
@@ -67,7 +67,7 @@ h1, h2 {
 h1 {
   color: var(--med);
   font-size: 3.6rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 h2 {
@@ -83,7 +83,7 @@ h3 {
   letter-spacing: 0.5px;
   color: var(--black);
   margin: 0;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 hr {
@@ -97,7 +97,13 @@ a svg:not(:root).svg-inline--fa {
 }
 
 footer {
+  margin-top: 3rem;
   font-size: 1.5rem;
+  background-color: var(--almost-white);
+  padding: 0.5rem 0 1rem 0;
+}
+
+footer #socials {
   display: flex;
   justify-content: center;
 }
@@ -108,6 +114,15 @@ footer a {
   max-height: 2rem;
   color: var(--med);
   overflow: hidden;
+}
+
+footer a:last-of-type {
+  margin-right: 0;
+}
+
+footer p {
+  font-size: 0.75rem;
+  text-align: center;
 }
 
 footer a:hover {
@@ -138,7 +153,7 @@ figcaption {
   right: 0;
   margin: 0 auto;
   z-index: 2;
-  padding: 8px 8px;
+  padding: 16px 16px;
   box-sizing: content-box;
   background-color: rgba(255, 255, 255, 1);
   /* box-shadow: 0 13px 8px -8px rgba(0,0,0,.05); */
@@ -161,8 +176,8 @@ figcaption {
   margin: 0;
   font-size: 0.8rem;
   line-height: 0.8rem;
-  font-family: 'Heebo', sans-serif;
-  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
   width: auto;
 }
 
@@ -216,8 +231,22 @@ figcaption {
   color: white;
 }
 
+#menu a:hover {
+  color: var(--black)
+}
+
 #menu.is-expanded + .hamburger {
   color: white;
+}
+
+#menu #menu-resume a {
+  color: white;
+  background-color: var(--med);
+  padding: 8px 1rem;
+}
+
+#menu #menu-resume a:hover {
+  background-color: var(--black);
 }
 
 #nav-links .hamburger {
@@ -241,9 +270,10 @@ figcaption {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 8px;
+  padding: 0 16px;
   /* width: 100%; */
   width: auto;
+  box-sizing: border-box;
 }
 
 #page h2 span.brackets {
@@ -253,6 +283,27 @@ figcaption {
 
 #page h3 a:hover {
   color: var(--med);
+}
+
+#page .highlight {
+  background-image: linear-gradient(to top,rgba(156, 187, 255,.25) 54%,transparent 54%,transparent 100%);
+  text-decoration: none;
+}
+
+.project-video {
+  padding-bottom: 58.5417%;
+  position: relative;
+  max-width: 100%;
+  /* height: 0px; */
+  overflow: hidden;
+}
+
+.project-video iframe, .project-video object, .project-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 425px) {
@@ -294,6 +345,10 @@ figcaption {
     margin: 0 auto;
   }
 
+  .project-video {
+    padding-bottom: 41.4583%;
+  }
+
 }
 
 @media (min-width: 980px) {
@@ -301,7 +356,11 @@ figcaption {
   #menu li {
     letter-spacing: 1px;
     display: inline-block;
-    margin: 0 3rem;
+    margin: 0 2rem;
+  }
+
+  #menu #menu-about {
+    margin-right: 1rem;
   }
 
   #menu li:last-child {

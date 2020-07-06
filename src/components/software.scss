@@ -4,6 +4,7 @@ div#software {
   ul {
     list-style: none;
   }
+
 }
 
 #functions {
@@ -70,8 +71,9 @@ div#software {
   // margin-top: 1rem;
   font-weight: 700;
 
-  &:hover {
-    border-bottom: 1px solid var(--med);
+  &::before {
+    content: '>';
+    margin-right: 0.5rem;
   }
 }
 
@@ -81,41 +83,41 @@ div#software {
 }
 
 .function p {
-  margin-top: 0;
+  margin-top: 1rem;
 }
 
-.highlight {
-  position: relative;
-}
-
-.highlight-text {
-  position: relative;
-  z-index: 1;
-  padding-right: 0.5rem;
-}
-
-.highlight-color.highlight-first{
-  left: -0.25rem;
-  padding-right: 0.5rem;
-}
-
-.highlight-last + .highlight-first{
-  padding-right: 0.25rem;
-}
-
-.highlight-text.highlight-last {
-  padding-right: 0.25rem;
-}
-
-.highlight-color {
-  width: 100%;
-  background-color: var(--almost-white);
-  position: absolute;
-  left: 0;
-  bottom: 6px;
-  z-index: 0;
-  height: 40%;
-}
+// .highlight {
+//   position: relative;
+// }
+//
+// .highlight-text {
+//   position: relative;
+//   z-index: 1;
+//   padding-right: 0.5rem;
+// }
+//
+// .highlight-color.highlight-first{
+//   left: -0.25rem;
+//   padding-right: 0.5rem;
+// }
+//
+// .highlight-last + .highlight-first{
+//   padding-right: 0.25rem;
+// }
+//
+// .highlight-text.highlight-last {
+//   padding-right: 0.25rem;
+// }
+//
+// .highlight-color {
+//   width: 100%;
+//   background-color: var(--almost-white);
+//   position: absolute;
+//   left: 0;
+//   bottom: 6px;
+//   z-index: 0;
+//   height: 40%;
+// }
 
 ul.techs {
   margin: 0;

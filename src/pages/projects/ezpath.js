@@ -12,7 +12,7 @@ function Ezpath() {
       Users get personalized recommendations and have access to a selection of mentors.`}
       team='Anissa Baird, Aizah Bakhtiyar, Aleashea Valentine'
       role="User researcher, animator, video editor, and audio recorder/editor"
-      context="Course project for CSC318 (Design of Interactive Computational Media)"
+      context="Course project for CSC318 - Design of Interactive Computational Media"
       techs={["Axure R9", "Lo-fi prototypes", "iMovie", "Logic Pro X", "Adobe Illustrator"]}
       featuredimage='ezpath.gif'
       award='2nd place: IBM Design Competition'

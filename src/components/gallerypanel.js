@@ -9,7 +9,7 @@ function GalleryPanel({subtitle, src, title, url}) {
       <Link className='gallery-img' to={path}>
         <img src={src} alt={title}/>
       </Link>
-      <h3><Link to={path}>{title}</Link></h3>
+      <h3><Link className='highlight' to={path}>{title}</Link></h3>
       <div className='subtitle'>
         {subtitle.split("\n").map((i) => {
               return <p className='subline' key={i}>{i}</p>;

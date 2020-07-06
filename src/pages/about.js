@@ -24,7 +24,7 @@ function About() {
 
         <div id='about-header' className='page-section'>
           <div id='description'>
-            <h1>Hey there 👋🏽</h1>
+            <h1>About me</h1>
             <h2>I'm Matias Huapaya (<a href='https://www.mypronouns.org/'>he/him</a>).</h2>
             <p>
 

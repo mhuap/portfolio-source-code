@@ -72,7 +72,7 @@ function FeaturedProject({ title, description, award, src, url, children }) {
       </div>
 
       <div className='featured-text'>
-        <h3>{title}</h3>
+        <h3 className='highlight'>{title}</h3>
         <p>{description}</p>
       </div>
 

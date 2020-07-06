@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 import '../components/index.css';
-// import SocialFooter from '../components/SocialFooter';
+import SocialFooter from '../components/SocialFooter';
 
 class PageTemplate extends React.Component {
   constructor(props) {
@@ -23,6 +23,7 @@ class PageTemplate extends React.Component {
     const { isExpanded } = this.state;
 
     return (
+      <>
       <div className="container">
         <nav id="top-bar">
           <h2>
@@ -48,6 +49,11 @@ class PageTemplate extends React.Component {
                   about_me
                 </Link>
               </li>
+              <li id="menu-resume">
+                <a href='https://drive.google.com/file/d/1JAX1C2G02xuYuxuripNENvbYk7sqhqEd/view?usp=sharing'>
+                  resume
+                </a>
+              </li>
             </ul>
             <button className="hamburger" onClick={e => this.handleToggle(e)} onKeyDown={e => this.handleToggle(e)}>{this.state.isExpanded ? '✕' : '☰'}</button>
           </div>
@@ -58,6 +64,8 @@ class PageTemplate extends React.Component {
         </div>
 
       </div>
+      <SocialFooter />
+      </>
     );
   }
 }
