@@ -19,7 +19,7 @@ class Function extends React.Component {
           to={path}>
           <img
             alt={this.props.name}
-            src={this.props.src === '' ?  filler : require(`../images/${this.props.src}`)} />
+            src={this.props.src ? this.props.src : filler} />
         </Link>
         <div className='function-text'>
           <h3 className='function-title'>

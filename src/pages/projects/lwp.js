@@ -6,6 +6,7 @@ import step1a from '../../images/lwp/p1@2x.jpg';
 import step1b from '../../images/lwp/p12@2x.jpg';
 import sketches from '../../images/lwp/sketches.jpg';
 import final from '../../images/lwp/final options@2x.jpg';
+import lwp from '../../images/gallery/lwp.jpg';
 
 function Lwp() {
   return (
@@ -17,7 +18,7 @@ function Lwp() {
       role="Graphic designer"
       context="Work for the University of Toronto - Sexual & Gender Diversity Office"
       techs={["Logo design", "Branding", "Adobe Illustrator"]}
-      featuredimage='gallery/lwp.jpg'
+      featuredimage={lwp}
       award=''
     >
 

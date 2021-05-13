@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from '../../components/project';
+import cogx from '../../images/cogx.jpg';
 
 function TweetImg() {
   return (
@@ -10,8 +11,8 @@ function TweetImg() {
       team='N/A'
       role="UI/UX Designer"
       context="Personal project"
-      techs={["Adobe XD"]}
-      featuredimage='cogx.jpg'
+      techs={["Adobe XD", "Copywriting", "UI/UX Design"]}
+      featuredimage={cogx}
       award=''
     >
 

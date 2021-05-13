@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from '../../components/project';
 import logo from '../../images/everwear/nooutlinegreen.png';
+import everwear from '../../images/everwear.gif';
 
 function Everwear() {
   return (
@@ -12,7 +13,7 @@ function Everwear() {
       role="Front-end developer, UX/UI Designer, and graphic designer"
       context="Hackathon project at UofT Hacks VII"
       techs={["Google Cloud Functions", "ReactJS", "Conversational Form", "Node.js", "Puppeteer", "Adobe XD"]}
-      featuredimage='everwear.gif'
+      featuredimage={everwear}
       award='Best Use of Google Cloud: UofT Hacks'
     >
 

@@ -5,6 +5,8 @@ import './featured.scss';
 import './software.scss';
 
 import filler from '../images/filler.jpeg';
+import everwearGif from '../images/everwear.gif';
+import ezPathGif from '../images/ezpath.gif';
 
 function Featured() {
   return (
@@ -18,7 +20,7 @@ function Featured() {
             title='everwear'
             description='A web-app that suggests sustainable alternatives to clothes the user is already interested in buying.'
             award='Best Use of Google Cloud: UofT Hacks'
-            src='everwear.gif'
+            src={everwearGif}
             url='everwear'
           >
 
@@ -37,7 +39,7 @@ function Featured() {
             title='ezPath'
             description='A web-app to help people choose a school or program for post-secondary education. Users get personalized recommendations and have access to a selection of mentors.'
             award='2nd place: IBM Design Competition'
-            src='ezpath.gif'
+            src={ezPathGif}
             url='ezpath'
           >
             <ul className='techs'>
@@ -68,7 +70,7 @@ function FeaturedProject({ title, description, award, src, url, children }) {
           </div>
           <span>{award}</span>
         </div>
-        <img alt={title} src={src === '' ? filler : require(`../images/${src}`)}/>
+        <img alt={title} src={src ? src : filler}/>
       </div>
 
       <div className='featured-text'>

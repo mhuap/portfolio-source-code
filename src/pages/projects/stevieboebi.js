@@ -3,6 +3,8 @@ import Project from '../../components/project';
 import fb from '../../images/stevie/fb screenshot.png';
 import poster from '../../images/stevie/stevie-poster.png';
 
+import stevie from '../../images/gallery/stevie-mini.jpg';
+
 function Stevie() {
   return (
     <Project
@@ -13,7 +15,7 @@ function Stevie() {
       role="Graphic Designer"
       context="Work For LGBTOUT"
       techs={["Poster design", "Adobe Illustrator"]}
-      featuredimage='gallery/stevie-mini.jpg'
+      featuredimage={stevie}
       award=''
     >
 

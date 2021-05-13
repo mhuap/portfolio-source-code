@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from '../../components/project';
 import insta from '../../images/tweet/insta-examples@2x.jpg';
+import tweetImg from '../../images/tweetimg.jpg';
 
 function TweetImg() {
   return (
@@ -13,7 +14,7 @@ function TweetImg() {
       role="Full-stack developer"
       context="Personal project"
       techs={["React", "cheerio.js", "Next.js", "Google Cloud Functions", "html2canvas"]}
-      featuredimage='tweetimg.jpg'
+      featuredimage={tweetImg}
       award=''
     >
 

@@ -52,7 +52,7 @@ function About() {
             <InfoList name='Technical Languages' group={techLangs}/>
             <InfoList name='Development Tools' group={devTools}/>
             <InfoList name='Design Tools'  group={designTools}/>
-            <InfoList name='Miscallaneous'  group={other}/>
+            <InfoList name='Miscellaneous'  group={other}/>
           </div>
         </div>
 

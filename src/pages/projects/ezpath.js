@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from '../../components/project';
 import group from '../../images/ezpath/csc318top3.jpeg'
-
+import ezpath from '../../images/ezpath.gif';
 
 function Ezpath() {
   return (
@@ -14,7 +14,7 @@ function Ezpath() {
       role="User researcher, animator, video editor, and audio recorder/editor"
       context="Course project for CSC318 - Design of Interactive Computational Media"
       techs={["Axure R9", "Lo-fi prototypes", "iMovie", "Logic Pro X", "Adobe Illustrator"]}
-      featuredimage='ezpath.gif'
+      featuredimage={ezpath}
       award='2nd place: IBM Design Competition'
     >
       <h3>Summary</h3>

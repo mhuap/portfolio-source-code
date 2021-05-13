@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from '../../components/project';
+import qo from '../../images/gallery/qo.jpg';
 
 function QueerOrientation() {
   return (
@@ -12,7 +13,7 @@ function QueerOrientation() {
       role="Graphic designer"
       context="Work for the University of Toronto - Sexual & Gender Diversity Office"
       techs={["Poster design", "Vector art", "Adobe Illustrator"]}
-      featuredimage='gallery/qo.jpg'
+      featuredimage={qo}
       award=''
     >
 

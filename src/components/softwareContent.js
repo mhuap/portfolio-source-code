@@ -2,6 +2,9 @@ import React from 'react';
 import Function from '../components/function.js';
 import './software.scss';
 
+import tweetImg from '../images/tweetimg.jpg';
+import cogx from '../images/cogx.jpg';
+
 function SoftwareContent() {
   return (
     <div id='software' className='page-section'>
@@ -9,7 +12,7 @@ function SoftwareContent() {
       <div id='functions' className='page-content'>
         <Function
           name='tweet-img'
-          src='tweetimg.jpg'
+          src={tweetImg}
           url='tweet-img'
           >
           <p>
@@ -25,26 +28,8 @@ function SoftwareContent() {
         </Function>
 
         <Function
-          name='SmartFleet'
-          src='smartfleet.gif'
-          url='smartfleet'
-          >
-          <p>
-            A car fleet management system for B2B use. Managers assign tasks to drivers,
-            remotely give them access to the car, and keep track of their location on the job.
-          </p>
-          <ul className='techs'>
-            <li>Google Maps Platform</li>
-            <li>Flask</li>
-            <li>SmartCar API</li>
-            <li>Javascript</li>
-            <li>HTML/CSS</li>
-          </ul>
-        </Function>
-
-        <Function
           name='COGx'
-          src='cogx.jpg'
+          src={cogx}
           url='cogx'
           >
           <p>

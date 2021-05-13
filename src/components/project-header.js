@@ -26,7 +26,7 @@ function ProjectHeader({title, date, description, team, role, context, techs, aw
         </div>
       </div>
 
-      <img className='featured-img' alt={title} src={featuredimage === '' ?  filler : require(`../images/${featuredimage}`)} />
+      <img className='featured-img' alt={title} src={featuredimage ?  featuredimage : filler} />
     </div>
   )
 }
