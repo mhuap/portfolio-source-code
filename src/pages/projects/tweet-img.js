@@ -13,7 +13,7 @@ function TweetImg() {
       team='N/A'
       role="Full-stack developer"
       context="Personal project"
-      techs={["React", "cheerio.js", "Next.js", "Google Cloud Functions", "html2canvas"]}
+      techs={["React", "Twitter API", "Next.js", "Google Cloud Functions", "html2canvas"]}
       featuredimage={tweetImg}
       award=''
     >
@@ -46,24 +46,31 @@ function TweetImg() {
 
       <h3>Build</h3>
 
+      <p>Initially, I scraped the tweet data from Twitter using cheerio.js via Google Cloud Functions.
+      At some point Twitter obfuscated their CSS, which made scraping impossible. In a way it all worked out
+      for the better because I made a Developer account and got access to the official Twitter API, which gave
+      me more flexibility.</p>
+
+      <p>The current tech stack looks like this:</p>
       <p><strong>Frontend: </strong>I built on Next.js and used html2canvas to
-      convert html into a canvas to save as an image. I used axios to make the call to the backend</p>
+      convert html into a canvas to save as an image. I used axios to make the call to the backend. Also I
+      created a custom colorpicker using <a href="https://casesandberg.github.io/react-color/">React Color</a>.</p>
 
-      <p><strong>Backend: </strong>I used cheerio.js to scrape the tweet from twitter.com
-      via Node.js in Google Cloud Functions. I also isolated the exact html elements I needed with cheerio.js.</p>
+      <p><strong>Backend: </strong>I used Next.js's serverless functions to create an HTTPs request between the
+      front-end and Twitter's API.
+      </p>
 
-      <p>I chose to use Next.js out of curiosity for the framework and desire to experiment with it.
-      In order to avoid CORS restrictions when web-scraping, I had to handle the webscraping with cheerio.js which
-      runs server-side. I wanted to host my site on Github Pages, which only supports hosting static HTML pages,
-      so I used Google Cloud Functions to run cheerio.js in a Node.js serverless function.</p>
+      <p>I chose to use Next.js out of curiosity for the framework and desire to experiment with it. I ended up deploying with Vercel
+      and the whole experience was very smooth and convenient seeing as they're made to be used together.</p>
 
       <h3>What's Next</h3>
 
-      <p>Currently, I am happy with the deployed version of tweet-img but this is a minimum viable product -
-      I have many plans for upcoming features. Not to mention, it only supports <a href='https://github.com/mhuap/tweet-img#tweet-support'>certain kinds of tweets</a> at the moment.</p>
+      <p>I just finished working on a good amount of features for this project. It has truly grown into more than just a
+      minimum viable product - so much so that my friends and I use it regularly. I keep track of all upcoming changes
+      on <a href='https://github.com/mhuap/tweet-img/projects/3'>github</a>.</p>
 
-      <p>Future customization features will include backgrounds using gradients or an uploaded image,
-      and letting the tweet content stand alone without a white background.</p>
+      <p>Current background customization features include using a solid color,
+      an uploaded image, or an image from a URL.</p>
 
     </Project>
   )
