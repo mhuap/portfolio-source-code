@@ -34,16 +34,6 @@ class PageTemplate extends React.Component {
 
           <div id="nav-links">
             <ul id="menu" className={`collapsed ${isExpanded ? "is-expanded" : ""}`}>
-              <li id="menu-software">
-                <Link to="/#software">
-                  software_development
-                </Link>
-              </li>
-              <li id="menu-design">
-                <Link to="/#design">
-                  graphic_design
-                </Link>
-              </li>
               <li id="menu-about">
                 <Link to='/about'>
                   about_me

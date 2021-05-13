@@ -23,8 +23,10 @@ class Function extends React.Component {
         </Link>
         <div className='function-text'>
           <h3 className='function-title'>
-            <Link className='highlight' to={path}>{this.props.name}</Link>
+            <Link to={path}>{this.props.name}</Link>
           </h3>
+          <p className='award'>{this.props.award}</p>
+          <p className='descriptor'>{this.props.descriptor}</p>
 
           {this.props.children}
 

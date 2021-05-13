@@ -15,8 +15,8 @@ function Home() {
         <h1>Hey, I'm Matias.</h1>
         <h2 id='home-subtitle'>I'm a <a href="#software" className='highlight'>software developer</a> + <a href="#design" className='highlight'>designer</a>.</h2>
         <p>
-          I build things by focusing on usability and aesthetics,
-          and I’m passionate about approaching tech through an anti-oppressive, intersectional lens.
+          I build things for the web by focusing on usability and aesthetics,
+          and I’m passionate about nurturing a culture of intersectionality and compassion in tech.
         </p>
       </div>
       </div>

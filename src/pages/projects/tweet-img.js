@@ -13,7 +13,7 @@ function TweetImg() {
       team='N/A'
       role="Full-stack developer"
       context="Personal project"
-      techs={["React", "Twitter API", "Next.js", "Google Cloud Functions", "html2canvas"]}
+      techs={["React", "Twitter API", "Next.js", "html2canvas"]}
       featuredimage={tweetImg}
       award=''
     >

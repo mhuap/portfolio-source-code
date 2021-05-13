@@ -14,7 +14,6 @@ function IndexPage(props) {
       <SEO title="" keywords={[`portfolio`, `website`, `huapaya`, `web development`, `programmer`]} />
       <PageTemplate>
         <Home />
-        <Featured />
         <SoftwareContent />
         <Design />
         <DemoReel />
