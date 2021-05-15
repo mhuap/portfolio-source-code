@@ -1,2 +1,2 @@
-Wes Huapaya's personal portfolio website.
+Matias Huapaya's personal portfolio website.
 Built with Gatsby.
